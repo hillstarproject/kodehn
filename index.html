@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="KODE — Diseño web y desarrollo frontend para marcas con algo que decir.">
+<title>KODE® — Diseño web con intención</title>
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Newsreader:opsz,wght@6..72,400..600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<!-- Pantalla de carga -->
+<div class="loader" aria-hidden="true">
+  <div class="loader-logo" data-has>
+    <img class="logo-img" data-slot="logoBlanco" data-fallback="logo" alt="KODE">
+    <span class="brand-fb">KODE®</span>
+  </div>
+  <div class="loader-bar"></div>
+</div>
+
+<div class="progress" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"><span></span></div>
+
+<nav class="rail" aria-label="Secciones de la página">
+  <a href="#inicio" data-sec="inicio"><span>Inicio</span></a>
+  <a href="#manifiesto" data-sec="manifiesto"><span>La idea</span></a>
+  <a href="#servicios" data-sec="servicios"><span>Qué hacemos</span></a>
+  <a href="#proyectos" data-sec="proyectos"><span>Proyectos</span></a>
+  <a href="#alcance" data-sec="alcance"><span>Alcance</span></a>
+  <a href="#proceso" data-sec="proceso"><span>Proceso</span></a>
+  <a href="#contacto" data-sec="contacto"><span>Contacto</span></a>
+</nav>
+
+<header class="topbar">
+  <div class="wrap">
+    <div class="nav">
+      <a class="brand" href="#inicio" aria-label="KODE, inicio" data-has data-edit="logo">
+        <img class="logo-img" data-slot="logo" alt="KODE">
+        <span class="brand-fb">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#000"/><path d="M11.5 8v16M12.5 16l8.5-8M12.5 16l8.5 8" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span style="margin-left:10px">KODE<sup>®</sup></span>
+        </span>
+      </a>
+      <nav class="navlinks" id="navlinks" aria-label="Navegación principal">
+        <a href="#servicios">Qué hacemos</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#alcance">Alcance</a>
+        <a href="#proceso">Proceso</a>
+        <a class="nav-cta-m" href="#contacto">Iniciar proyecto</a>
+      </nav>
+      <div class="nav-end">
+        <a class="btn btn-ink" href="#contacto">Iniciar proyecto</a>
+        <button class="menu-btn" type="button" aria-expanded="false" aria-controls="navlinks"><span>Menú</span></button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="contenido">
+
+  <!-- HERO -->
+  <section class="hero wrap" id="inicio">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <h1>
+          <span class="line" style="--i:0"><span>La web</span></span>
+          <span class="line" style="--i:1"><span>también</span></span>
+          <span class="line" style="--i:2"><span>es marca.</span></span>
+        </h1>
+        <p class="hero-desc">Diseñamos y construimos experiencias digitales que hacen que una buena idea se entienda, se recuerde y se sienta distinta.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#contacto">Hablemos de tu idea <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a>
+          <a class="textlink" href="#proyectos">Ver trabajo seleccionado</a>
+        </div>
+      </div>
+
+      <div class="stage-par">
+        <div class="stage" id="stage">
+          <div class="browser" role="img" aria-label="Sitio web de ejemplo que cambia de estilo visual">
+            <div class="b-bar"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="b-url">preview.website</span></div>
+            <div class="site" id="demo-site" data-skin="editorial">
+              <div class="s-nav"><b>Studio</b><span>Proyectos</span><span>Detalles</span><span class="s-cart" id="cart">Selección <b id="cart-count">0</b></span></div>
+              <div class="s-hero">
+                <h3>Diseño con intención.</h3>
+                <p>Una identidad visual hecha para destacar.</p>
+                <button class="s-btn" type="button" data-add>Explorar</button>
+              </div>
+              <div class="s-products">
+                <div class="s-card"><div class="s-img"></div><div class="s-meta"><div>Concepto 01<span>Ver detalle</span></div><button class="s-add" type="button" data-add aria-label="Seleccionar concepto 01">+</button></div></div>
+                <div class="s-card"><div class="s-img"></div><div class="s-meta"><div>Concepto 02<span>Ver detalle</span></div><button class="s-add" type="button" data-add aria-label="Seleccionar concepto 02">+</button></div></div>
+                <div class="s-card"><div class="s-img"></div><div class="s-meta"><div>Concepto 03<span>Ver detalle</span></div><button class="s-add" type="button" data-add aria-label="Seleccionar concepto 03">+</button></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="stage-note">
+            <span>Ideas que toman forma</span>
+            <div class="skins" role="group" aria-label="Cambiar el estilo del sitio de ejemplo">
+              <button type="button" data-skin="editorial" aria-pressed="true">Editorial</button>
+              <button type="button" data-skin="audaz" aria-pressed="false">Audaz</button>
+              <button type="button" data-skin="nocturno" aria-pressed="false">Nocturno</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-strip">
+      <span><strong>KODE®</strong> — Estudio digital independiente. Ideas con dirección.</span>
+      <span>Diseño web · Desarrollo frontend</span>
+      <a class="cue" href="#manifiesto">Desliza para explorar <i></i></a>
+    </div>
+  </section>
+
+  <!-- MANIFIESTO -->
+  <section class="manifesto wrap" id="manifiesto">
+    <div class="manifesto-grid">
+      <p class="side-label">La idea detrás del código</p>
+      <div>
+        <h2 data-scrub>No se trata de tener una web. Se trata de tener algo que decir.</h2>
+        <div class="manifesto-foot">
+          <p data-r style="--d:.05s">Una web es parte de cómo una marca se presenta al mundo. Por eso trabajamos la estructura, el diseño y cada interacción como piezas de una misma idea.</p>
+          <a class="textlink" href="#servicios" data-r style="--d:.15s">Así trabajamos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUESINA -->
+  <div class="marquee" aria-label="Diseño con intención. Frontend con carácter. Experiencias que se sienten.">
+    <div class="marquee-track" id="mq" aria-hidden="true">
+      <span>Diseño con intención</span><svg class="star" viewBox="0 0 24 24"><path fill="#000" d="M12 0l2.2 8.1 8.3-3-5.4 6.9 7.9 3.6-8.4 1.2.1 8.8L12 18.3 7.3 25.6l.1-8.8L-1 15.6l7.9-3.6L1.500 5.100l8.300 3z" transform="translate(0 -.5) scale(.96)"/></svg>
+      <span>Frontend con carácter</span><svg class="star" viewBox="0 0 24 24"><path fill="#000" d="M12 0l2.2 8.1 8.3-3-5.4 6.9 7.9 3.6-8.4 1.2.1 8.8L12 18.3 7.3 25.6l.1-8.8L-1 15.6l7.9-3.6L1.500 5.100l8.300 3z" transform="translate(0 -.5) scale(.96)"/></svg>
+      <span>Experiencias que se sienten</span><svg class="star" viewBox="0 0 24 24"><path fill="#000" d="M12 0l2.2 8.1 8.3-3-5.4 6.9 7.9 3.6-8.4 1.2.1 8.8L12 18.3 7.3 25.6l.1-8.8L-1 15.6l7.9-3.6L1.500 5.100l8.300 3z" transform="translate(0 -.5) scale(.96)"/></svg>
+      <span>Diseño con intención</span><svg class="star" viewBox="0 0 24 24"><path fill="#000" d="M12 0l2.2 8.1 8.3-3-5.4 6.9 7.9 3.6-8.4 1.2.1 8.8L12 18.3 7.3 25.6l.1-8.8L-1 15.6l7.9-3.6L1.500 5.100l8.300 3z" transform="translate(0 -.5) scale(.96)"/></svg>
+      <span>Frontend con carácter</span><svg class="star" viewBox="0 0 24 24"><path fill="#000" d="M12 0l2.2 8.1 8.3-3-5.4 6.9 7.9 3.6-8.4 1.2.1 8.8L12 18.3 7.3 25.6l.1-8.8L-1 15.6l7.9-3.6L1.500 5.100l8.300 3z" transform="translate(0 -.5) scale(.96)"/></svg>
+      <span>Experiencias que se sienten</span><svg class="star" viewBox="0 0 24 24"><path fill="#000" d="M12 0l2.2 8.1 8.3-3-5.4 6.9 7.9 3.6-8.4 1.2.1 8.8L12 18.3 7.3 25.6l.1-8.8L-1 15.6l7.9-3.6L1.500 5.100l8.300 3z" transform="translate(0 -.5) scale(.96)"/></svg>
+    </div>
+  </div>
+
+  <!-- SERVICIOS -->
+  <section class="services wrap" id="servicios">
+    <div class="section-head">
+      <h2 data-split>Intención en cada detalle.</h2>
+      <p class="lead" data-r style="--d:.2s"><strong>Lo que hacemos</strong>Diseño y frontend pensados en conjunto, desde la primera impresión hasta el último clic.</p>
+    </div>
+    <div class="bento">
+      <article class="svc svc-a" data-r>
+        <div class="svc-visual" aria-hidden="true">
+          <div class="spec">
+            <div class="spec-aa" data-speed=".05">Aa</div>
+            <div class="spec-scale"><i></i><i></i><i></i><i></i>
+              <div class="swatches"><b style="background:#000"></b><b style="background:#fff"></b><b style="background:#8C8C8C"></b><b style="background:#E4E4E4"></b></div>
+            </div>
+          </div>
+        </div>
+        <div><h3>Diseño de interfaz</h3><p>Jerarquía visual, estructura, tipografía y composición para que el mensaje sea claro y la marca tenga una presencia propia.</p></div>
+      </article>
+      <article class="svc svc-b" data-r style="--d:.12s">
+        <div class="svc-visual" aria-hidden="true">
+<div class="code"><span class="cl" style="--l:0"><span class="t">&lt;section</span> <span class="a">class</span>=<span class="s">"hero"</span><span class="t">&gt;</span></span><span class="cl" style="--l:1">  <span class="t">&lt;h1&gt;</span><span class="c">Tu idea, en pantalla.</span><span class="t">&lt;/h1&gt;</span></span><span class="cl" style="--l:2"><span class="t">&lt;/section&gt;</span></span><span class="cl" style="--l:3"> </span><span class="cl" style="--l:4"><span class="a">.hero</span> { <span class="c">display</span>: <span class="s">grid</span>; }</span><span class="cl" style="--l:5"><span class="a">.hero</span>:<span class="c">hover</span> { <span class="c">transform</span>: <span class="s">scale(1.02)</span>; }</span></div>
+        </div>
+        <div><h3>Desarrollo frontend</h3><p>La parte visible y funcional de tu web, construida con HTML, CSS y JavaScript a partir del diseño y alcance definidos.</p></div>
+      </article>
+      <article class="svc svc-c" data-r>
+        <div><h3>Interacción y adaptación</h3><p>Animaciones con propósito, navegación intuitiva y una experiencia cuidada en móvil, tablet y escritorio.</p></div>
+        <div class="svc-visual" aria-hidden="true">
+          <div class="devices">
+            <div class="dev dev-d"><i></i><i style="width:70%"></i><i style="width:45%"></i></div>
+            <div class="dev dev-t"><i></i><i style="width:80%"></i><i style="width:50%"></i></div>
+            <div class="dev dev-p"><i></i><i style="width:75%"></i></div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section class="work panel" id="proyectos">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 data-split>Ideas en pantalla.</h2>
+        <p class="lead" data-r style="--d:.2s"><strong>Trabajo seleccionado</strong>Dos proyectos, dos necesidades diferentes. Una misma obsesión por hacer que la experiencia tenga sentido.</p>
+      </div>
+
+      <div class="projects">
+        <!-- Proyecto 1 · imagen editable desde el modo edición -->
+        <article class="project">
+          <div class="project-stage" data-has data-edit="streed" data-cursor="Ver">
+            <img class="p-img" src="./images/streedejemplo.png" data-slot="streed" data-speed=".05" alt="Proyecto STREED: tienda de streetwear y prendas personalizadas">
+            <div class="p-mock">
+              <div class="browser" aria-hidden="true">
+                <div class="b-bar"><span class="dots"><i></i><i></i><i></i></span><span class="b-url">streedhn.github.io</span></div>
+                <div class="m-streed">
+                  <div class="ms-nav"><b>STREED®</b><span>Catálogo</span><span>Personalizar</span><span class="ms-cart">Carrito 2</span></div>
+                  <div class="ms-hero">
+                    <p class="ms-word">OWN<br><i>YOUR</i><br>STYLE.</p>
+                    <svg class="ms-tee" viewBox="0 0 200 200"><path d="M62 28 18 56l20 38 22-12v90h80V82l22 12 20-38-44-28c-8 18-24 28-38 28S70 46 62 28Z" fill="#fff"/><rect x="80" y="84" width="40" height="40" rx="5" fill="#000"/><circle cx="100" cy="104" r="9" fill="#fff"/></svg>
+                  </div>
+                  <div class="ms-row"><span>Hoodies</span><span>Camisetas</span><span>Gorras</span><span>Personalizados</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-meta"><span>Marca / Moda / Catálogo</span><span>Proyecto 01</span></div>
+            <div>
+              <h3>STREED<small>®</small></h3>
+              <p>Una experiencia de compra para una marca de streetwear y prendas personalizadas. El catálogo, las opciones de producto y el recorrido hacia el pedido ayudan a que la identidad también se viva en pantalla.</p>
+              <ul class="tags"><li>Dirección visual</li><li>Catálogo</li><li>Carrito frontend</li><li>Responsive</li></ul>
+            </div>
+            <div class="project-end"><span>Ver proyecto en vivo</span><a class="round" href="https://streedhn.github.io/" target="_blank" rel="noopener noreferrer" aria-label="Visitar STREED"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div>
+          </div>
+        </article>
+
+        <!-- Proyecto 2 · imagen editable desde el modo edición -->
+        <article class="project flip">
+          <div class="project-stage alt" data-has data-edit="cdc" data-cursor="Ver">
+            <img class="p-img" src="./images/cdc.jpg" data-slot="cdc" data-speed=".05" alt="Proyecto CDC Laboratorio: perfiles, exámenes y sucursales">
+            <div class="p-mock">
+              <div class="browser" aria-hidden="true">
+                <div class="b-bar"><span class="dots"><i></i><i></i><i></i></span><span class="b-url">cdc-laboratorio</span></div>
+                <div class="m-cdc">
+                  <div class="mc-nav"><b>CDC Laboratorio</b><span>Perfiles</span><span>Exámenes</span><span>Sucursales</span></div>
+                  <h4 class="mc-title">Cuidar también es entender.</h4>
+                  <div class="mc-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>Buscar un examen o perfil</div>
+                  <div class="mc-tiles"><div><i></i>Perfiles</div><div><i></i>Exámenes</div><div><i></i>Sucursales</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-meta"><span>Salud / Información / Servicios</span><span>Proyecto 02</span></div>
+            <div>
+              <h3>CDC <small>LAB.</small></h3>
+              <p>Interfaz para organizar perfiles, exámenes y sucursales de laboratorio. La arquitectura de contenido busca que las personas encuentren información importante con menos fricción.</p>
+              <ul class="tags"><li>Arquitectura de contenido</li><li>UI</li><li>Interacción</li><li>Responsive</li></ul>
+            </div>
+            <div class="project-end"><span>Consulta sobre este proyecto</span><a class="round" href="#contacto" aria-label="Consultar por el proyecto CDC"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ALCANCE -->
+  <section class="scope wrap" id="alcance">
+    <div class="scope-grid">
+      <div class="scope-intro">
+        <h2 data-split>Lo que ves.<br>Lo que recibes.</h2>
+        <p class="lead" data-r style="--d:.15s"><strong>Claridad desde el inicio</strong>Un buen proyecto no solo se ve bien: también tiene límites claros, entregables definidos y una ruta de trabajo compartida.</p>
+        <a class="textlink" href="#contacto" data-r style="--d:.25s">Definir el alcance</a>
+      </div>
+      <div class="sheet">
+        <div class="check" data-r><span class="check-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><div><h3>Diseño con dirección</h3><p>Una propuesta visual alineada con la identidad, el mensaje y los objetivos del proyecto.</p></div></div>
+        <div class="check" data-r><span class="check-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><div><h3>Frontend funcional</h3><p>Maquetación e interacciones con HTML, CSS y JavaScript según el alcance acordado.</p></div></div>
+        <div class="check" data-r><span class="check-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><div><h3>Diseño responsive</h3><p>Adaptación a móvil, tablet y escritorio con atención a la navegación y legibilidad.</p></div></div>
+        <div class="check" data-r style="border-bottom:0"><span class="check-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><div><h3>Entrega organizada</h3><p>Archivos del proyecto y recursos preparados para publicarse en el alojamiento correspondiente.</p></div></div>
+        <aside class="note" data-r>
+          <span class="note-ico" aria-hidden="true">i</span>
+          <div><strong>Una nota importante sobre el alcance</strong><p>Los sitios frontend no incluyen automáticamente bases de datos, cuentas de usuario, paneles administrativos ni procesamiento de pagos. Si el proyecto requiere backend o integraciones, se define por separado antes de comenzar.</p></div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESO -->
+  <section class="process" id="proceso">
+    <div class="wrap">
+      <div class="process-head">
+        <h2 data-split>De la idea al impacto.</h2>
+        <p class="lead" data-r style="--d:.2s"><strong>El proceso</strong>Un recorrido colaborativo, con decisiones claras y sin hacerte adivinar qué viene después.</p>
+      </div>
+      <ol class="steps" id="steps">
+        <div class="steps-line" aria-hidden="true"><i></i></div>
+        <li class="step"><span class="step-n" aria-hidden="true">1</span><span class="step-when">Primero</span><h3>Conversamos</h3><p>Entendemos tu marca, tus objetivos, tu público y qué necesita resolver la web.</p></li>
+        <li class="step"><span class="step-n" aria-hidden="true">2</span><span class="step-when">Después</span><h3>Definimos</h3><p>Acordamos estructura, dirección visual, contenido, funciones y entregables.</p></li>
+        <li class="step"><span class="step-n" aria-hidden="true">3</span><span class="step-when">Construimos</span><h3>Diseñamos</h3><p>Desarrollamos la interfaz y revisamos su comportamiento en diferentes pantallas.</p></li>
+        <li class="step"><span class="step-n" aria-hidden="true">4</span><span class="step-when">Al final</span><h3>Entregamos</h3><p>Revisamos el resultado frente al alcance acordado y dejamos listo el proyecto para su publicación.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contact panel" id="contacto">
+    <div class="wrap">
+      <div class="contact-grid">
+        <div>
+          <h2 data-split>¿Y si lo hacemos real?</h2>
+          <p class="lead" data-r style="--d:.2s"><strong>El siguiente paso</strong>Cuéntanos qué tienes en mente. Cada proyecto se cotiza a medida según su alcance, sus necesidades y lo que quieres conseguir.</p>
+          <div class="direct" data-r style="--d:.3s">
+            <a href="https://wa.me/?text=Hola%20KODE%2C%20quiero%20hablar%20sobre%20un%20proyecto%20web." target="_blank" rel="noopener noreferrer">WhatsApp <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+            <a href="mailto:?subject=Proyecto%20web%20%7C%20KODE">Correo electrónico <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+          </div>
+        </div>
+
+        <form class="form" id="brief-form" data-r style="--d:.15s">
+          <div class="field"><label for="nombre">¿Cómo te llamas?</label><input id="nombre" name="nombre" type="text" autocomplete="name" placeholder="Tu nombre" required></div>
+          <fieldset class="field">
+            <legend>¿Qué quieres construir?</legend>
+            <div class="chips">
+              <label class="chip"><input type="radio" name="tipo" value="Diseño y desarrollo web" required><span>Diseño y desarrollo web</span></label>
+              <label class="chip"><input type="radio" name="tipo" value="Landing page" required><span>Landing page</span></label>
+              <label class="chip"><input type="radio" name="tipo" value="Rediseño de una web" required><span>Rediseño de una web</span></label>
+              <label class="chip"><input type="radio" name="tipo" value="Interfaz frontend" required><span>Interfaz frontend</span></label>
+              <label class="chip"><input type="radio" name="tipo" value="Otro proyecto digital" required><span>Otro proyecto digital</span></label>
+            </div>
+          </fieldset>
+          <div class="field"><label for="idea">Cuéntanos un poco más</label><textarea id="idea" name="idea" rows="4" placeholder="La idea, el objetivo, qué necesitas…" required></textarea></div>
+          <div class="form-foot">
+            <p>Este formulario prepara tu mensaje; no almacena ni envía datos a un servidor.</p>
+            <button class="btn" type="submit">Preparar mensaje <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></span></button>
+          </div>
+          <div class="feedback" id="form-feedback" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+
+      <footer class="footer">
+        <a class="brand" href="#inicio" aria-label="KODE, volver al inicio" data-has data-edit="logoBlanco">
+          <img class="logo-img" data-slot="logoBlanco" data-fallback="logo" alt="KODE">
+          <span class="brand-fb">
+            <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#fff"/><path d="M11.5 8v16M12.5 16l8.5-8M12.5 16l8.5 8" stroke="#000" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span style="margin-left:10px">KODE<sup>®</sup></span>
+          </span>
+        </a>
+        <span>Diseño web con intención · © <span id="year">2026</span></span>
+        <div class="footer-social" aria-label="Redes y contacto">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.7" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 21v-8h3l.5-4H14V7c0-1.2.4-2 2-2h1.7V1.5C17 1.3 15.8 1.2 14.6 1.2 11 1.2 9 3.3 9 7v2H6v4h3v8"/></svg></a>
+          <a href="https://wa.me/?text=Hola%20KODE%2C%20quiero%20consultar%20por%20un%20proyecto%20web." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M20.5 11.7a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.5-4.8a8.4 8.4 0 1 1 16-4Z"/><path d="M8.5 8.3c.3-.5.6-.5.9-.5h.4c.2 0 .4.1.5.4l.7 1.6c.1.2.1.4-.1.6l-.5.6c-.2.2-.2.4 0 .6.4.7 1 1.3 1.7 1.7.2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.6.8c.3.1.4.3.3.6-.1.4-.4 1.1-.9 1.4-.5.3-1.1.5-1.8.3-1-.2-2.2-.8-3.3-1.8-1-.9-1.7-2.1-1.9-3.1-.2-.9.2-1.7.5-2.2Z"/></svg></a>
+          <a href="mailto:?subject=Proyecto%20web%20%7C%20KODE" aria-label="Correo electrónico"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 6 8 7 8-7"/></svg></a>
+        </div>
+        <a class="textlink" href="#inicio">Volver arriba</a>
+      </footer>
+    </div>
+  </section>
+</main>
+
+<!-- Barra del modo edición (Ctrl + Shift + E, o añade ?editar a la dirección) -->
+<div class="editbar" id="editbar" role="region" aria-label="Modo edición de imágenes" hidden>
+  <span><b>Modo edición</b> · Haz clic en el logo o en una imagen de proyecto para cambiarla</span>
+  <span id="editmsg" role="status"></span>
+  <button type="button" id="edit-reset">Restablecer</button>
+  <button type="button" id="edit-exit">Salir</button>
+</div>
+
+</body>
+</html>
